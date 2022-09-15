@@ -1,0 +1,8 @@
+----------------------- Integrantes ----------------------- 
+Juan Carlos Avila Flores (Project Manager) - Registro de Pacientes
+Alejandro Paul Flores Ayala - Página Principal
+Chris Alan Apaza Aguilar - Listado de Datos
+Diego Cesar Alvarado Callisaya - Página de Contacto
+
+------------------------- GitHub ------------------------- 
+https://github.com/JuancaJcA/Tecno-Web-4
