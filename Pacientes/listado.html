@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <!--* HEAD -->
+
     <head>
         <!-- TTTLE -->
         <title>Pacientes</title>
@@ -19,10 +20,10 @@
         <!-- !GOOGLE FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script type="text/javascript" src="js/listado.js"></script>
 
     </head>
 
@@ -40,21 +41,130 @@
                 <img src="/images/bg-img-1.jpg" style="width: 100%" />
             </p>
             <!-- Title -->
-            <h1 class="title-1">Inicio</h1>
+            <h1 class="title-1">Listado de Pacientes</h1>
             <!-- Text-1 -->
-            <p class="text-1">
-                Texto 1
-            </p>
+            <div class="container">
+                <div class="row table-responsive">
+                    <table class="table table-striped w-auto">
+                        <thead>
+                            <tr>
+                                <th>CI</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Correo</th>
+                                <th>Sintomas</th>
+                                <th>Alta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>6349423</td>
+                                <td>Marlow</td>
+                                <td>Waind</td>
+                                <td>mwaind0@slashdot.org</td>
+                                <td>Dolores musculares</td>
+                                <td><button type="button" class="btn btn-danger" onclick="pacienteAlta()">Dar
+                                        Alta</button></td>
+                            </tr>
+                            <tr>
+                                <td>7171523 </td>
+                                <td>Dulcea</td>
+                                <td>Bonnar</td>
+                                <td>dbonnar1@linkedin.com</td>
+                                <td>Tos</td>
+                                <td><button type="button" class="btn btn-danger" onclick="pacienteAlta()">Dar
+                                        Alta</button></td>
+                            </tr>
+                            <tr>
+                                <td>6317535</td>
+                                <td>Dorisa</td>
+                                <td>Caras</td>
+                                <td>dcaras2@amazon.co.uk</td>
+                                <td>Tos</td>
+                                <td><button type="button" class="btn btn-danger" onclick="pacienteAlta()">Dar
+                                        Alta</button></td>
+                            </tr>
+                            <tr>
+                                <td>8186039</td>
+                                <td>Hasheem</td>
+                                <td>Lucy</td>
+                                <td>hlucy3@twitpic.com</td>
+                                <td>Dolores musculares</td>
+                                <td><button type="button" class="btn btn-danger" onclick="pacienteAlta()">Dar
+                                        Alta</button></td>
+                            </tr>
+                            <tr>
+                                <td>8462012</td>
+                                <td>Eirena</td>
+                                <td>Stilgoe</td>
+                                <td>estilgoe4@live.com</td>
+                                <td>Fiebre o escalofríos</td>
+                                <td><button type="button" class="btn btn-danger" onclick="pacienteAlta()">Dar
+                                        Alta</button></td>
+                            </tr>
+                            <tr>
+                                <td>9291686</td>
+                                <td>Charlotte</td>
+                                <td>Sindell</td>
+                                <td>csindell5@springer.com</td>
+                                <td>Fatiga</td>
+                                <td><button type="button" class="btn btn-danger" onclick="pacienteAlta()">Dar
+                                        Alta</button></td>
+                            </tr>
+                            <tr>
+                                <td>9607631</td>
+                                <td>Cory</td>
+                                <td>Oakwell</td>
+                                <td>coakwell6@dedecms.com</td>
+                                <td>Fatiga</td>
+                                <td><button type="button" class="btn btn-danger" onclick="pacienteAlta()">Dar
+                                        Alta</button></td>
+                            </tr>
+                            <tr>
+                                <td>7339011</td>
+                                <td>Nikolas</td>
+                                <td>Prettyjohn</td>
+                                <td>nprettyjohn7@odnoklassniki.ru</td>
+                                <td>Fiebre o escalofríos</td>
+                                <td><button type="button" class="btn btn-danger" onclick="pacienteAlta()">Dar
+                                        Alta</button></td>
+                            </tr>
+                            <tr>
+                                <td>6550172 </td>
+                                <td>Mariette</td>
+                                <td>McCurlye</td>
+                                <td>mmccurlye8@miibeian.gov.cn</td>
+                                <td>Dolor de cabeza</td>
+                                <td><button type="button" class="btn btn-danger" onclick="pacienteAlta()">Dar
+                                        Alta</button></td>
+                            </tr>
+                            <tr>
+                                <td>6864759</td>
+                                <td>Othello </td>
+                                <td>Yeowell</td>
+                                <td>oyeowell9@mayoclinic.com</td>
+                                <td> Fatiga</td>
+                                <td><button type="button" class="btn btn-danger" onclick="pacienteAlta()">Dar
+                                        Alta</button></td>
+                            </tr>
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </center>
         <!-- Footer -->
         <div style="height: 150px"></div>
         <footer class="sticky-footer">
             <p>
-                <a href="https://www.ucb.edu.bo/"
-                    >Universidad Católica Boliviana "San Pablo"</a
-                >
+                <a href="https://www.ucb.edu.bo/">Universidad Católica Boliviana "San Pablo"</a>
                 <br />Tecnologías Web
             </p>
         </footer>
     </body>
+
 </html>
