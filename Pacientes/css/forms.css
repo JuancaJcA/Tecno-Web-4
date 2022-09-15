@@ -1,5 +1,6 @@
 /* Responsive Forms */
 input[type="text"],
+input[type="number"],
 select,
 textarea {
     width: 100%;
@@ -46,7 +47,7 @@ input[type="submit"]:hover {
 
 .col-75 {
     float: left;
-    width: 75%;
+    width: 70%;
     margin-top: 6px;
 }
 

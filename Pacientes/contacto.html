@@ -9,6 +9,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="SIS-241 TECNOLOGÍAS WEB [Par. 1]" />
         <!-- LINK -->
+        
+        <script type="text/javascript" src="js/contacto.js"></script>
+
         <link rel="icon" href="images/logo.png" />
         <link rel="stylesheet" href="css/body.css" />
         <link rel="stylesheet" href="css/forms.css" />
@@ -23,7 +26,6 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
             rel="stylesheet"
         />
-
     </head>
 
     <body class="bodyWhite">
@@ -45,18 +47,10 @@
                 <div class="container-80">x
                         <div class="row">
                             <div class="col-25">
-                                <label for="fname">Nombre</label>
+                                <label for="fname">Nombre y Apellidos</label>
                             </div>
                             <div class="col-75">
-                                <input type="text" id="fname" name="Nombre" placeholder="Ingrese su nombre..." />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-25">
-                                <label for="lname">Apellido</label>
-                            </div>
-                            <div class="col-75">
-                                <input type="text" id="lname" name="lastname" placeholder="Ingrese su apellido..." />
+                                <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su nombre y apellido" />
                             </div>
                         </div>
                         <div class="row">
@@ -64,7 +58,16 @@
                                 <label for="mail">Correo</label>
                             </div>
                             <div class="col-75">
-                                <input type="text" id="lmail" name="mail" placeholder="Ingrese su correo..." />
+                                <input type="text" id="email" name="email" placeholder="Ingrese su correo" />
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="mail">Número</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" id="numero" name="numero" value="70000000" />
                             </div>
                         </div>
                         <div class="row">
@@ -72,12 +75,12 @@
                                 <label for="subject">Mensaje</label>
                             </div>
                             <div class="col-75">
-                                <textarea id="subject" name="subject" placeholder="Escriba su mensaje..." style="height: 200px"></textarea>
+                                <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje..." style="height: 150px"></textarea>
                             </div>
                         </div>
                         <br />
                         <div class="row">
-                            <input type="submit" class="btn-home" value="Enviar" />
+                            <input type="submit" class="btn-home" onclick="EnviaContacto()" value="Enviar" />
                         </div>
                 </div>
             </div>
