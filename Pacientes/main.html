@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/navbar.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/buttons.css" />
+        <link rel="stylesheet" href="css/main.css">
         <!-- !GOOGLE FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,6 +28,65 @@
     </head>
 
     <body class="bodyWhite">
+        <script>
+            function pintar(col)
+            {
+              document.getElementById('cuadrado1').style.backgroundColor=col;
+            }
+
+
+            function pintar1(col)
+            {
+              document.getElementById('cuadrado2').style.backgroundColor=col;
+            }
+
+
+            function pintar2(col)
+            {
+              document.getElementById('cuadrado3').style.backgroundColor=col;
+            }
+
+
+            function pintar3(col)
+            {
+              document.getElementById('cuadrado4').style.backgroundColor=col;
+            }
+
+            function cambiar()
+            {
+              document.getElementById('xd').src="images/M2.jpg";
+            }
+
+            function cambiar1()
+            {
+              document.getElementById('xd').src="images/M1.jpg";
+            }
+            function cambiar2()
+            {
+              document.getElementById('xd1').src="images/M4.jpg";
+            }
+
+            function cambiar3()
+            {
+              document.getElementById('xd1').src="images/M3.webp";
+            }
+            function cambiar4()
+            {
+              document.getElementById('xd2').src="images/M3.webp";
+            }
+
+
+            function cambiarxd()
+            {
+              document.getElementById('xd3').src="images/m6.jpg";
+            }
+            function cambiarxd1()
+            {
+              document.getElementById('xd3').src="images/M5.jpg";
+            }
+        </script>
+
+        
         <!-- Navbar -->
         <ul class="topnav">
             <li><a class="active" href="main.html">Inicio</a></li>
@@ -34,18 +94,60 @@
             <li><a href="listado.html">Listado</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
-        <center>
-            <!-- Big Image -->
-            <p>
-                <img src="/images/bg-img-1.jpg" style="width: 100%" />
-            </p>
-            <!-- Title -->
-            <h1 class="title-1">Inicio</h1>
-            <!-- Text-1 -->
-            <p class="text-1">
-                Texto 1
-            </p>
-        </center>
+
+
+        <div class="xd">
+
+    
+            <article class="articulo1">
+                <center>
+                    <img src="images/M5.jpg" class="imag1"  id="xd3" onMouseOver="cambiarxd()" onMouseOut="cambiarxd1()">
+
+                </center>
+                
+
+
+            </article>
+    
+        </div>
+
+
+        <div class="xd">
+            <article class="articulo" id="cuadrado1" onMouseOver="pintar('#cbdfbd')" onMouseOut="pintar('#ffff')">
+                <center>
+                    <img src="images/M1.jpg" class="imag" id="xd" onMouseOver="cambiar()" onMouseOut="cambiar1()">
+    
+                </center>
+            </article>
+    
+            <article class="articulo" id="cuadrado2" onMouseOver="pintar1('#f6f4d2')" onMouseOut="pintar1('#ffff')">
+                <h1>¿Quiénes somos?</h1><br><br>
+                <p>Hospital Metodista Ha sido sinónimo de excelencia en educación, investigación y cuidado clínico por generaciones. Desde que el Hospital se estableció en 1939, los miembros de la facultad han mejorado la salud humana al innovar en sus roles como médicos, mentores y académicos. Pilotaron modelos educativos, desarrollaron nuevos planes de estudio para abordar las necesidades emergentes en la atención de salud y produjeron líderes y cuidadores compasivos que están moldeando los campos de la ciencia y la medicina en todo el mundo con su experiencia y pasión.  </p>
+            </article>
+    
+        </div>
+    
+        <div class="xd">
+            <article class="articulo" id="cuadrado3" onMouseOver="pintar2('#f6f4d2')" onMouseOut="pintar2('#ffff')">
+                <h1>Nuestra atención</h1><br><br>
+                <p>Nuestro personal trabaja en conjunto para que la atención del paciente sea un trayecto uniforme desde la lesión hasta la recuperación: un proceso de atención continua para el herido y su familia.
+                    El modo en que trabajamos entre bastidores es un proceso diseñado para ayudar mejor a nuestros pacientes, ya que nos aseguramos de que usted reciba los cuidados críticos de forma segura y de que todas sus necesidades estén cubiertas.
+                    Cuando un paciente es ingresado en el Centro de Trauma Rees-Jones, se lo evalúa y clasifica según la respuesta fisiológica a la lesión y su gravedad.
+                </p>
+            </article>
+    
+            <article class="articulo" id="cuadrado4" onMouseOver="pintar3('#cbdfbd')" onMouseOut="pintar3('#ffff')">
+                <center>
+                    <img src="images/M3.webp" class="imag" id="xd1" onMouseOver="cambiar2()" onMouseOut="cambiar3()">
+    
+                </center>
+                
+            </article>
+    
+        </div>
+    
+
+
         <!-- Footer -->
         <div style="height: 150px"></div>
         <footer class="sticky-footer">
